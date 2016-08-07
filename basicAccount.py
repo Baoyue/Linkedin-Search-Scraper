@@ -244,7 +244,7 @@ def getProfile(url):
                 if tempGPA:
                     gpa = tempGPA.group(1)
                	else:
-               		gpa = ""
+                    gpa = ""
                 gradeList.append(gpa)
 
     except AttributeError:
