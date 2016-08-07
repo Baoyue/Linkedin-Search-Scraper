@@ -242,7 +242,7 @@ def getProfile(url):
             for grade in item.select('header > h5 > .grade'):
                 tempGPA = re.search('([0-9]*\.[0-9]+|[0-9]+)', grade.getText())
                 if tempGPA:
-   					gpa = tempGPA.group(1)
+                    gpa = tempGPA.group(1)
                	else:
                		gpa = ""
                 gradeList.append(gpa)
